@@ -160,6 +160,12 @@ Again, the payload is **stored first** rather than necessarily executing at in
 
 ---
 
+<img width="1139" height="739" alt="Screenshot 2026-08-17 at 3 27 58 PM" src="https://github.com/user-attachments/assets/b1abb246-38ca-40b4-a0ff-da147d8b9fab" />
+
+<img width="1141" height="784" alt="Screenshot 2026-08-17 at 3 28 22 PM" src="https://github.com/user-attachments/assets/7b1c7cbd-dbc5-4fe3-bd3c-80c2e2b557f8" />
+
+
+
 ### Step 3 — Trigger the second-order injection
 
 Go to:
@@ -199,6 +205,13 @@ DROP TABLE hello;
 ```
 
 ---
+
+<img width="1139" height="735" alt="Screenshot 2026-08-17 at 3 29 48 PM" src="https://github.com/user-attachments/assets/83bff2ed-be16-491e-a0dd-c90824ac2dc7" />
+
+
+<img width="1134" height="677" alt="Screenshot 2026-08-17 at 3 30 21 PM" src="https://github.com/user-attachments/assets/181178cc-3cff-457f-b48e-a1bcb11265a4" />
+
+
 
 ### Step 4 — Retrieve the second flag
 
