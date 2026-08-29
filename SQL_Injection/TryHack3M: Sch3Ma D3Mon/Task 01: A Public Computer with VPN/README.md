@@ -200,21 +200,10 @@ Look for Post request like below:
 78	30.606734195	10.11.81.126	10.10.111.136	HTTP	1009	POST /login.php?msg=1 HTTP/1.1  (application/x-www-form-urlencoded)
 ```
 
-or:
 
-```
-Hypertext Transfer Protocol 2
-```
 
-Then look for:
+<img width="1278" height="732" alt="Screenshot 2026-08-29 at 2 16 29 PM" src="https://github.com/user-attachments/assets/b06b9478-6625-4b2b-a100-5fa2eaf5eed0" />
 
-```
-Request Method: POST
-```
-
-and the request data.
-
-For HTTP/2, the credentials may appear in the reconstructed/decrypted request data rather than in the traditional HTTP/1.1 layout.
 
 ---
 
