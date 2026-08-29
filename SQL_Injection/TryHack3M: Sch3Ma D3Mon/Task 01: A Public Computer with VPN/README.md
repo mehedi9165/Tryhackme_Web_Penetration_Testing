@@ -1,4 +1,4 @@
-<img width="1281" height="747" alt="Screenshot 2026-08-29 at 2 17 21 PM" src="https://github.com/user-attachments/assets/e0a34d96-d622-4299-b2e6-1a0f3bf542bf" /># Task — TLS Traffic Analysis
+
 
 ## 1. Objective
 
