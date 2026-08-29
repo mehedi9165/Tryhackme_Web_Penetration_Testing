@@ -204,7 +204,7 @@ Look for Post request like below:
 
 
 
-![Uploading Screenshot 2026-08-29 at 2.15.44 PM.png…]()
+<img width="1279" height="740" alt="Screenshot 2026-08-29 at 2 15 44 PM" src="https://github.com/user-attachments/assets/d9ade6c7-ac72-47cc-89e2-4dfc56fa0073" />
 
 
 
