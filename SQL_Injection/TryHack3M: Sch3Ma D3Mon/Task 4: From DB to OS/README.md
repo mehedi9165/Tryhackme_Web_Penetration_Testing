@@ -129,6 +129,10 @@ lannister' UNION SELECT null,null,null,null, sys_eval('whoami') -- //
 
 ## 
 
+<img width="1275" height="720" alt="Screenshot 2026-09-17 at 8 14 44 PM" src="https://github.com/user-attachments/assets/3dbc7ce7-63f7-4cea-ae6d-99540473dfc4" />
+
+
+
 ---
 
 # 4. Step 2 — Execute `pwd`
@@ -158,6 +162,10 @@ becomes:
 ```sql
 sys_eval('pwd')
 ```
+
+
+<img width="1270" height="726" alt="Screenshot 2026-09-17 at 8 15 16 PM" src="https://github.com/user-attachments/assets/8e13e2ac-7e0e-4d37-98ea-395230d89880" />
+
 
 ---
 
@@ -221,7 +229,6 @@ whoami
 Record the returned username.
 
 
-<img width="1275" height="720" alt="Screenshot 2026-09-17 at 8 14 44 PM" src="https://github.com/user-attachments/assets/3dbc7ce7-63f7-4cea-ae6d-99540473dfc4" />
 
 
 ---
@@ -255,7 +262,6 @@ Record the returned path.
 
 
 
-<img width="1270" height="726" alt="Screenshot 2026-09-17 at 8 15 16 PM" src="https://github.com/user-attachments/assets/8e13e2ac-7e0e-4d37-98ea-395230d89880" />
 
 ---
 
